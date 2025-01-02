@@ -74,8 +74,7 @@ pub fn main() void {
         Alien.hatch(3),
         Alien.hatch(3),
         Alien.hatch(5),
-        Alien.hatch(3),
-    };
+        Alien.hatch(3),};
 
     var aliens_alive = aliens.len;
     const heat_ray = HeatRay{ .damage = 7 }; // We've been given a heat ray weapon.
@@ -86,6 +85,7 @@ pub fn main() void {
 
         // Loop through every alien by reference (* makes a pointer capture value)
         for (&aliens) |*alien| {
+
 
             // *** Zap the alien with the heat ray here! ***
             ???.zap(???);
